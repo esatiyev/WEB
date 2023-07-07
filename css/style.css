@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+::selection {
+    background: #ef664d;
+    color: black;
+}
 div.about-text2 {
     display: none;
 }
@@ -9,6 +13,8 @@ html,body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
 }
+
+/* HEADER */
 div.header {
     background-image: url("../pictures/header-background-image.jpg");
     background-repeat: no-repeat;
@@ -72,7 +78,7 @@ ul li a:focus {
 }
 div.Iam {
     position: relative;
-    top: 35%;
+    top: 45%;
 }
 div.Iam h1 {
     padding-top: 15px;
@@ -124,8 +130,6 @@ div.about-header h3.about {
     font-family: 'Arvo', serif;
     font-weight: 400;
     color: #2a404e;
-    /* position: absolute;
-    left: 46%; */
     margin-top: 35px;
 }
 div.pp {
@@ -194,6 +198,9 @@ div.percentage-graph {
     height: 100%;
     background-color: #ef664d;
 }
+div.percentage-written {
+    float: right;
+}
 #PHP {
     width: 95%;
 }
@@ -240,10 +247,8 @@ div.percentage-graph {
 /* GALLERY SECTION */
 div#gallery {
     width: 100%;
-    /* height: max-content; */
     padding-top: 42px;
     margin-top: 35px;
-    /* background-color: #071e39; */
     background-color: #061627;
 }
 div#gallery h3.gallery-header {
@@ -262,14 +267,14 @@ div.pictures {
     margin: 0 auto;
 }
 div.picture img {
-  width: 100%;
-  height: 150px;
+    width: 100%;
+    height: 150px;
 }
 .responsive {
-  padding: 0 6px;
-  margin-bottom: 30px;
-  float: left;
-  width: 24.99999%;
+    padding: 0 6px;
+    margin-bottom: 30px;
+    float: left;
+    width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -282,7 +287,6 @@ div.picture img {
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 49%;
-    /* height: 50px; */
   }
   .responsive:nth-child(n+3){
     margin-top: 20px;
@@ -291,13 +295,13 @@ div.picture img {
 
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-div.picture:hover img {
-    transform: scale(1.5);  
+div.picture img:hover {
+    transform: scale(1.3);  
     transition: 0.7s; 
 }
 

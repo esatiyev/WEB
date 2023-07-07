@@ -39,3 +39,7 @@ function validation(){
         t.setAttribute("class","js-placeholder"); 
     }
 }
+
+function isNotAvailable() {
+    alert("Sorry, this link is not available!");
+}

@@ -240,7 +240,13 @@
     textarea {
         padding: 0;
     }
-
+    
+    div.social-media-icon a:nth-last-child(n + 2) {
+        margin-right: 10vw;
+    }
+    div.social-media-icon a {
+        font-size: 16px;
+    }
 
     a#toTop {
         position: fixed;
@@ -331,5 +337,9 @@
         100% {
           opacity: 1;
         }
+      }
+
+      h3.gallery-header {
+            font-size: 10vw !important;
       }
 }
